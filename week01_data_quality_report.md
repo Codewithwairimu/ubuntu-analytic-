@@ -4,18 +4,25 @@
 
 This report summarizes an exploratory data analysis of a Nairobi supply chain dataset containing 4,500 transaction records from 2023-01-01 to 2024-12-31. The project focused on data quality, stockout risk, supplier performance, regional availability, and fulfillment reliability.
 
+
 The dataset is clean and suitable for exploratory analysis. No missing values, duplicate transaction IDs, invalid dates, or cases where `Units_Received` exceeded `Units_Ordered` were found. The overall stockout rate is 3.67%, representing 165 stockout events.
 
+
 The main operational risks are concentrated in specific categories, products, suppliers, and regions. Dairy has the highest category stockout rate, Brookside Dairy has the longest average lead time, and Westlands has the highest stockout count.
+
 
 ## Objectives
 
 The analysis aimed to answer five business questions:
 
 1. Which product categories have the highest stockout rates?
+
 2. Which suppliers have the longest average lead times?
+
 3. How do stockouts change over time?
+
 4. Which regions experience the most stockouts?
+
 5. Which suppliers have the best or weakest fulfillment rates?
 
 ## Data Description
@@ -44,11 +51,17 @@ The analysis was completed in the Jupyter notebook `week01_supply_chain_eda.ipyn
 The workflow included:
 
 - Loading the CSV data into a pandas DataFrame.
+
 - Parsing the `Date` field with day-first formatting.
+
 - Extracting the  year, month, quarter, and day of week.
+
 - Checking data quality across missing values, duplicates, invalid dates, and logical fulfillment errors.
+
 - Aggregating stockout rates by category and region.
+
 - Aggregating average lead time and fulfillment rate by supplier.
+
 - Visualizing patterns with bar charts, line charts, and a heatmap.
 
 ## Data Quality Findings
@@ -132,18 +145,23 @@ This pattern suggests that monthly monitoring can help identify seasonal or plan
 ## Recommendations
 
 1. Prioritize Dairy stockout prevention.
+
    Dairy has the highest category stockout rate, and Brookside Milk 500ml is one of the highest-risk products. Review safety stock, ordering frequency, and supplier delivery reliability for dairy items.
 
 2. Investigate Potatoes 2kg replenishment.
+
    Potatoes 2kg has the highest product-level stockout rate at 7.14%. Produce availability may be sensitive to demand swings, supplier harvest cycles, or transport timing.
 
 3. Review Brookside Dairy lead time.
+
    Brookside Dairy has the longest average lead time and is connected to a high-risk category. A supplier review could identify whether delivery schedules, order cutoffs, or minimum order quantities are contributing to stockouts.
 
 4. Strengthen monitoring in Westlands.
+
    Westlands has both the highest stockout count and the highest regional stockout rate. This region should receive closer inventory monitoring and replenishment checks.
 
 5. Add operational root-cause fields.
+
    Future datasets should include delivery status, supplier capacity, transport delays, warehouse delays, order placement date, expected delivery date, actual delivery date, promotions, pricing, and demand forecasts.
 
 ## Limitations
