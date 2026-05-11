@@ -12,7 +12,7 @@ This project uses Python data analysis tools to answer practical supply chain qu
 - Which regions have the highest stockout counts?
 - Which suppliers have the strongest fulfillment rates?
 
-The main analysis is contained in [`Supply_two_eda.ipynb`](Supply_two_eda.ipynb), with the source data in [`Supply-Chain-Dataset.csv`](Supply-Chain-Dataset.csv).
+The main analysis is contained in [`week01_supply_chain_eda.ipynb`], with the source data in [week01-nairobi-supply-chain.csv]
 
 ## Key Findings
 
@@ -28,9 +28,9 @@ The main analysis is contained in [`Supply_two_eda.ipynb`](Supply_two_eda.ipynb)
 
 | File | Description |
 | --- | --- |
-| `Supply-Chain-Dataset.csv` | Raw supply chain transaction dataset |
-| `Supply_two_eda.ipynb` | Jupyter notebook containing cleaning, analysis, and visualizations |
-| `REPORT.md` | Written project report with methodology, findings, and recommendations |
+| `week01-nairobi-supply-chain.csv' | Raw supply chain transaction dataset |
+| `week01_supply_chain_eda.ipynb` | Jupyter notebook containing cleaning, analysis, and visualizations |
+| `week01_data_quality_report.md` | Written project report with methodology, findings, and recommendations |
 | `Wk 01 - Session Guide (3).pdf` | Supporting session guide used for the exercise |
 
 ## Dataset Fields
@@ -59,7 +59,7 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-Install the required packages:
+Install the required libraries:
 
 ```bash
 pip install pandas numpy matplotlib seaborn jupyter
