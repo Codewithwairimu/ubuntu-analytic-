@@ -16,7 +16,7 @@ The main analysis is contained in [`Supply_two_eda.ipynb`](Supply_two_eda.ipynb)
 
 ## Key Findings
 
-- The dataset contains 4,500 records across 2023 and 2024.
+- The dataset contains 4,500 records across 2023 & 2024.
 - Data quality is strong: no missing values, duplicate transaction IDs, invalid dates, or fulfillment anomalies were found.
 - Overall stockout rate is 3.67%, with 165 stockout events.
 - Dairy has the highest category stockout rate at 6.69%.
