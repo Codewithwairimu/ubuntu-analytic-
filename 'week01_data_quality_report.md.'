@@ -20,7 +20,7 @@ The analysis aimed to answer five business questions:
 
 ## Data Description
 
-The source dataset is `Supply-Chain-Dataset.csv`.
+The source dataset is `week01-nairobi-supply-chain.csv'
 
 | Metric | Value |
 | --- | ---: |
@@ -39,13 +39,13 @@ The dataset includes transaction IDs, dates, products, categories, suppliers, or
 
 ## Methodology
 
-The analysis was completed in the Jupyter notebook `Supply_two_eda.ipynb` using Python, pandas, NumPy, Matplotlib, and Seaborn.
+The analysis was completed in the Jupyter notebook `week01_supply_chain_eda.ipynb` using Python, pandas, NumPy, Matplotlib, and Seaborn.
 
 The workflow included:
 
 - Loading the CSV data into a pandas DataFrame.
 - Parsing the `Date` field with day-first formatting.
-- Creating time-based features: year, month, quarter, and day of week.
+- Extracting the  year, month, quarter, and day of week.
 - Checking data quality across missing values, duplicates, invalid dates, and logical fulfillment errors.
 - Aggregating stockout rates by category and region.
 - Aggregating average lead time and fulfillment rate by supplier.
